@@ -1,0 +1,33 @@
+{
+  "name": "trutrip-qa-automation",
+  "version": "1.0.0",
+  "description": "Automation framework for TruTrip web and API",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx playwright install",
+    "test:web": "playwright test",
+    "test:api": "jest --config=jest.config.js",
+    "test": "npm run test:web && npm run test:api",
+    "report:web": "open reports/index.html",
+    "report:api": "open reports/api-report.html"
+  },
+  "author": "Achmad Thoriq B",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.40.1",
+    "dotenv": "^16.3.1",
+    "supertest": "^6.3.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/supertest": "^6.0.3",
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.6.2",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

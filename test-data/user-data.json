@@ -1,0 +1,21 @@
+{
+  "validUser": {
+    "email": "sunandar+qatest@trutrip.co",
+    "password": "Q43n6T3st!",
+    "remember": true
+  },
+  "invalidUser_missingEmail": {
+    "password": "Q43n6T3st!",
+    "remember": true
+  },
+  "invalidUser_wrongPassword": {
+    "email": "sunandar+qatest@trutrip.co",
+    "password": "wrong-password",
+    "remember": true
+  },
+  "invalidUser_emptyPassword": {
+    "email": "sunandar+qatest@trutrip.co",
+    "password": "",
+    "remember": false
+  }
+}
